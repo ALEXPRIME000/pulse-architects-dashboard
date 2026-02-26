@@ -1,1 +1,500 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Pulse Architects Dashboard</title><link href="https://cdn.tailwindcss.com" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/chart.js"></script></head><body><header class="bg-primary-green text-white p-4"><h1 class="text-3xl font-bold">Pulse Architects Dashboard</h1></header><main class="p-4"><section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"><div class="bg-white p-4 rounded-lg shadow-md"><h2 class="text-xl font-bold">Total Plans</h2><p class="text-3xl font-bold">5,000+</p></div><div class="bg-white p-4 rounded-lg shadow-md"><h2 class="text-xl font-bold">Licensed Architects</h2><p class="text-3xl font-bold">50+</p></div><div class="bg-white p-4 rounded-lg shadow-md"><h2 class="text-xl font-bold">Customers</h2><p class="text-3xl font-bold">10,000+</p></div><div class="bg-white p-4 rounded-lg shadow-md"><h2 class="text-xl font-bold">Awards Won</h2><p class="text-3xl font-bold">100+</p></div><div class="bg-white p-4 rounded-lg shadow-md"><h2 class="text-xl font-bold">Satisfaction</h2><p class="text-3xl font-bold">4.9/5</p></div><div class="bg-white p-4 rounded-lg shadow-md"><h2 class="text-xl font-bold">Categories</h2><p class="text-3xl font-bold">6</p></div></section><section class="mt-4"><h1 class="text-3xl font-bold">Plan Categories Breakdown</h1><table class="w-full border-collapse"><thead><tr><th class="border-b-2">Category</th><th class="border-b-2">Plans</th><th class="border-b-2">Examples</th></tr></thead><tbody><tr><td>Residential</td><td>2,845</td><td>Single Family, Multi-Family, Luxury</td></tr><tr><td>Commercial</td><td>1,256</td><td>Office, Retail, Restaurant, Hotels</td></tr><tr><td>Sustainable</td><td>891</td><td>Net Zero, Passive House, LEED</td></tr><tr><td>Institutional</td><td>678</td><td>Schools, Healthcare, Government</td></tr><tr><td>Historic</td><td>423</td><td>Victorian, Colonial, Craftsman</td></tr><tr><td>Waterfront</td><td>334</td><td>Beach Houses, Lake Homes, Marina</td></tr></tbody></table></section><section class="mt-4"><h1 class="text-3xl font-bold">Recent Activity / Featured Plans</h1><div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"><div class="bg-white p-4 rounded-lg shadow-md"><h2 class="text-xl font-bold">Plan Name</h2><p class="text-lg">Category: Residential</p><p class="text-lg">Bedrooms: 3</p><p class="text-lg">Bathrooms: 2</p><p class="text-lg">Total sq ft: 1500</p><p class="text-lg">Price: $200,000</p><img src="https://via.placeholder.com/150" alt="Plan Image"></div><div class="bg-white p-4 rounded-lg shadow-md"><h2 class="text-xl font-bold">Plan Name</h2><p class="text-lg">Category: Commercial</p><p class="text-lg">Bedrooms: 0</p><p class="text-lg">Bathrooms: 0</p><p class="text-lg">Total sq ft: 5000</p><p class="text-lg">Price: $500,000</p><img src="https://via.placeholder.com/150" alt="Plan Image"></div><div class="bg-white p-4 rounded-lg shadow-md"><h2 class="text-xl font-bold">Plan Name</h2><p class="text-lg">Category: Sustainable</p><p class="text-lg">Bedrooms: 2</p><p class="text-lg">Bathrooms: 1</p><p class="text-lg">Total sq ft: 1000</p><p class="text-lg">Price: $150,000</p><img src="https://via.placeholder.com/150" alt="Plan Image"></div><div class="bg-white p-4 rounded-lg shadow-md"><h2 class="text-xl font-bold">Plan Name</h2><p class="text-lg">Category: Institutional</p><p class="text-lg">Bedrooms: 0</p><p class="text-lg">Bathrooms: 0</p><p class="text-lg">Total sq ft: 2000</p><p class="text-lg">Price: $250,000</p><img src="https://via.placeholder.com/150" alt="Plan Image"></div><div class="bg-white p-4 rounded-lg shadow-md"><h2 class="text-xl font-bold">Plan Name</h2><p class="text-lg">Category: Historic</p><p class="text-lg">Bedrooms: 3</p><p class="text-lg">Bathrooms: 2</p><p class="text-lg">Total sq ft: 1200</p><p class="text-lg">Price: $180,000</p><img src="https://via.placeholder.com/150" alt="Plan Image"></div><div class="bg-white p-4 rounded-lg shadow-md"><h2 class="text-xl font-bold">Plan Name</h2><p class="text-lg">Category: Waterfront</p><p class="text-lg">Bedrooms: 2</p><p class="text-lg">Bathrooms: 1</p><p class="text-lg">Total sq ft: 800</p><p class="text-lg">Price: $120,000</p><img src="https://via.placeholder.com/150" alt="Plan Image"></div></div></section><section class="mt-4"><h1 class="text-3xl font-bold">Revenue Tracking</h1><p class="text-lg">Current Month: €0</p><p class="text-lg">Target: €10,000/mo</p><p class="text-lg">Pipeline: Track potential sales</p></section><section class="mt-4"><h1 class="text-3xl font-bold">Customer Stats</h1><p class="text-lg">Total Customers: 10,000+</p><p class="text-lg">Downloads Today: Track</p><p class="text-lg">Reviews: 4.9/5 average</p></section><section class="mt-4"><h1 class="text-3xl font-bold">Services Overview</h1><ul><li>Architectural Plans</li><li>3D Renders & Visualizations</li><li>Building Permits & Certificates</li><li>Custom Modifications (2-3 weeks)</li><li>Consultation Services</li></ul></section></main><script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pulse Architects — Dashboard</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        brand: { teal: '#14B8A6', sky: '#0EA5E9', dark: '#0D0D0D', card: '#111111', border: '#222222', muted: '#888888' }
+      },
+      fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+    }
+  }
+}
+</script>
+<style>
+  body { font-family: 'Inter', system-ui, sans-serif; background: #0D0D0D; color: #fff; }
+  .glass-card { background: rgba(17,17,17,0.8); border: 1px solid #222; backdrop-filter: blur(10px); border-radius: 12px; transition: all 0.3s cubic-bezier(0.4,0,0.2,1); }
+  .glass-card:hover { border-color: #14B8A6; transform: translateY(-2px); box-shadow: 0 20px 60px rgba(20,184,166,0.1); }
+  .neon-text { color: #14B8A6; text-shadow: 0 0 10px rgba(20,184,166,0.5); }
+  .gradient-text { background: linear-gradient(135deg, #14B8A6, #0EA5E9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .metric-card { background: linear-gradient(135deg, rgba(20,184,166,0.1), rgba(20,184,166,0.05)); border: 1px solid rgba(20,184,166,0.3); }
+  .progress-bar { background: #222; border-radius: 999px; overflow: hidden; height: 8px; }
+  .progress-fill { background: linear-gradient(90deg, #14B8A6, #0EA5E9); border-radius: 999px; height: 100%; transition: width 1s ease-out; box-shadow: 0 0 10px rgba(20,184,166,0.5); }
+  .tab-btn { position: relative; padding: 0.75rem 1.5rem; color: #888; transition: all 0.3s; border-bottom: 2px solid transparent; }
+  .tab-btn.active { color: #14B8A6; border-bottom-color: #14B8A6; }
+  .tab-btn:hover { color: #14B8A6; }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+  .cat-card { cursor: pointer; transition: all 0.3s; }
+  .cat-card:hover { transform: scale(1.03); }
+  .cat-card.selected { border-color: #14B8A6 !important; box-shadow: 0 0 30px rgba(20,184,166,0.2); }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  .fade-in { animation: fadeIn 0.4s ease forwards; }
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: #0D0D0D; }
+  ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+</style>
+</head>
+<body class="min-h-screen antialiased">
+
+<!-- PASSWORD -->
+<div id="pw-overlay" style="position:fixed;inset:0;z-index:9999;background:#0D0D0D;display:flex;align-items:center;justify-content:center;">
+  <div class="glass-card p-8 max-w-md w-[90%] text-center" style="border-color:#333;">
+    <div class="text-5xl mb-4">🏛️</div>
+    <h2 class="text-2xl font-bold mb-1">Pulse Architects</h2>
+    <p class="text-gray-500 mb-6 text-sm">Enter password to access</p>
+    <input id="pw-input" type="password" placeholder="Password" class="w-full px-4 py-3 bg-[#1a1a1a] border border-[#333] rounded-lg text-white mb-4 outline-none focus:border-brand-teal transition" onkeydown="if(event.key==='Enter')checkPw()">
+    <button onclick="checkPw()" class="w-full py-3 rounded-lg font-semibold text-black transition hover:opacity-90" style="background:linear-gradient(135deg,#14B8A6,#0EA5E9);">Access Dashboard</button>
+    <p id="pw-err" class="text-red-400 text-sm mt-3 hidden">Incorrect password</p>
+  </div>
+</div>
+<script>
+function checkPw(){document.getElementById('pw-input').value==='Alex123#'?(document.getElementById('pw-overlay').style.display='none',localStorage.setItem('pa-auth','1')):document.getElementById('pw-err').classList.remove('hidden')}
+if(localStorage.getItem('pa-auth')==='1')document.getElementById('pw-overlay').style.display='none';
+</script>
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 glass-card" style="border-radius:0;border-left:0;border-right:0;border-top:0;">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-11 h-11 rounded-xl flex items-center justify-center text-xl" style="background:linear-gradient(135deg,#14B8A6,#0EA5E9);">🏛️</div>
+      <div>
+        <h1 class="text-lg font-bold tracking-tight">Pulse Architects</h1>
+        <p class="text-xs text-gray-500">Architectural Plans Marketplace</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-3">
+      <span id="last-update" class="text-xs text-gray-500"></span>
+      <div class="w-2 h-2 rounded-full bg-green-500" title="Live"></div>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-6 flex gap-1 overflow-x-auto border-t border-[#222]">
+    <button class="tab-btn active" data-tab="overview">Overview</button>
+    <button class="tab-btn" data-tab="plans">Plans Catalog</button>
+    <button class="tab-btn" data-tab="services">Services</button>
+    <button class="tab-btn" data-tab="revenue">Revenue</button>
+    <button class="tab-btn" data-tab="customers">Customers</button>
+  </div>
+</header>
+
+<!-- METRICS -->
+<section class="max-w-7xl mx-auto px-6 py-8">
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+    <div class="glass-card rounded-xl p-5 text-center metric-card">
+      <p class="text-gray-400 text-sm mb-1">Total Plans</p>
+      <p class="text-3xl font-black neon-text">6,427</p>
+      <p class="text-xs text-gray-600 mt-1">across 6 categories</p>
+    </div>
+    <div class="glass-card rounded-xl p-5 text-center metric-card">
+      <p class="text-gray-400 text-sm mb-1">Architects</p>
+      <p class="text-3xl font-black neon-text">50+</p>
+      <p class="text-xs text-gray-600 mt-1">licensed professionals</p>
+    </div>
+    <div class="glass-card rounded-xl p-5 text-center metric-card">
+      <p class="text-gray-400 text-sm mb-1">Customers</p>
+      <p class="text-3xl font-black neon-text">10K+</p>
+      <p class="text-xs text-gray-600 mt-1">worldwide</p>
+    </div>
+    <div class="glass-card rounded-xl p-5 text-center metric-card">
+      <p class="text-gray-400 text-sm mb-1">Satisfaction</p>
+      <p class="text-3xl font-black neon-text">4.9<span class="text-lg">/5</span></p>
+      <p class="text-xs text-gray-600 mt-1">⭐⭐⭐⭐⭐</p>
+    </div>
+    <div class="glass-card rounded-xl p-5 text-center metric-card">
+      <p class="text-gray-400 text-sm mb-1">Revenue</p>
+      <p class="text-3xl font-black text-gray-500">€0</p>
+      <p class="text-xs text-gray-600 mt-1">just launched</p>
+    </div>
+  </div>
+</section>
+
+<main class="max-w-7xl mx-auto px-6 pb-12">
+
+  <!-- OVERVIEW TAB -->
+  <section id="tab-overview" class="tab-content active fade-in">
+    <div class="grid lg:grid-cols-2 gap-6">
+      <!-- Revenue Goals -->
+      <div class="glass-card rounded-xl p-6">
+        <h2 class="text-xl font-bold mb-6 flex items-center gap-2"><span class="neon-text">💰</span> Revenue Goals</h2>
+        <div class="space-y-6">
+          <div>
+            <div class="flex justify-between mb-2"><span class="text-sm text-gray-400">Near-Term (€3k/mo)</span><span class="text-sm font-semibold neon-text">0%</span></div>
+            <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-2"><span class="text-sm text-gray-400">6-Month Goal (€10k/mo)</span><span class="text-sm font-semibold neon-text">0%</span></div>
+            <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
+          </div>
+        </div>
+        <div class="mt-8" style="height:250px;"><canvas id="projectionChart"></canvas></div>
+      </div>
+      <!-- Plan Distribution -->
+      <div class="glass-card rounded-xl p-6">
+        <h2 class="text-xl font-bold mb-6 flex items-center gap-2"><span class="neon-text">📊</span> Plan Categories</h2>
+        <div style="height:300px;"><canvas id="categoryChart"></canvas></div>
+      </div>
+    </div>
+    <!-- Quick Stats -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+      <div class="glass-card rounded-xl p-5">
+        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">🏠 Top Category</h3>
+        <p class="text-2xl font-bold">Residential</p>
+        <p class="text-sm text-gray-500 mt-1">2,845 plans • 44% of catalog</p>
+      </div>
+      <div class="glass-card rounded-xl p-5">
+        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">🌿 Trending</h3>
+        <p class="text-2xl font-bold">Sustainable</p>
+        <p class="text-sm text-gray-500 mt-1">891 plans • fastest growing</p>
+      </div>
+      <div class="glass-card rounded-xl p-5">
+        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">🏆 Awards</h3>
+        <p class="text-2xl font-bold">100+</p>
+        <p class="text-sm text-gray-500 mt-1">industry recognitions</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANS TAB -->
+  <section id="tab-plans" class="tab-content fade-in">
+    <div class="mb-6">
+      <h2 class="text-2xl font-bold mb-1">Plans Catalog</h2>
+      <p class="text-sm text-gray-500">6,427 architectural plans across 6 categories</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="plans-grid">
+      <!-- Residential -->
+      <div class="glass-card rounded-xl p-6 cat-card" onclick="this.classList.toggle('selected')">
+        <div class="flex items-center justify-between mb-4">
+          <div class="w-12 h-12 rounded-lg flex items-center justify-center text-2xl" style="background:rgba(20,184,166,0.15);">🏠</div>
+          <span class="text-xs px-3 py-1 rounded-full font-semibold" style="background:rgba(20,184,166,0.15);color:#14B8A6;">POPULAR</span>
+        </div>
+        <h3 class="text-lg font-bold mb-1">Residential</h3>
+        <p class="text-3xl font-black neon-text mb-2">2,845</p>
+        <p class="text-sm text-gray-500">Single Family • Multi-Family • Luxury Villas</p>
+        <div class="mt-4 flex items-center gap-2">
+          <div class="progress-bar flex-1 h-2"><div class="progress-fill" style="width:44%"></div></div>
+          <span class="text-xs text-gray-500">44%</span>
+        </div>
+      </div>
+      <!-- Commercial -->
+      <div class="glass-card rounded-xl p-6 cat-card" onclick="this.classList.toggle('selected')">
+        <div class="flex items-center justify-between mb-4">
+          <div class="w-12 h-12 rounded-lg flex items-center justify-center text-2xl" style="background:rgba(14,165,233,0.15);">🏢</div>
+          <span class="text-xs px-3 py-1 rounded-full font-semibold" style="background:rgba(14,165,233,0.15);color:#0EA5E9;">GROWING</span>
+        </div>
+        <h3 class="text-lg font-bold mb-1">Commercial</h3>
+        <p class="text-3xl font-black neon-text mb-2">1,256</p>
+        <p class="text-sm text-gray-500">Office • Retail • Restaurant • Hotels</p>
+        <div class="mt-4 flex items-center gap-2">
+          <div class="progress-bar flex-1 h-2"><div class="progress-fill" style="width:20%"></div></div>
+          <span class="text-xs text-gray-500">20%</span>
+        </div>
+      </div>
+      <!-- Sustainable -->
+      <div class="glass-card rounded-xl p-6 cat-card" onclick="this.classList.toggle('selected')">
+        <div class="flex items-center justify-between mb-4">
+          <div class="w-12 h-12 rounded-lg flex items-center justify-center text-2xl" style="background:rgba(34,197,94,0.15);">🌿</div>
+          <span class="text-xs px-3 py-1 rounded-full font-semibold" style="background:rgba(34,197,94,0.15);color:#22c55e;">TRENDING</span>
+        </div>
+        <h3 class="text-lg font-bold mb-1">Sustainable</h3>
+        <p class="text-3xl font-black neon-text mb-2">891</p>
+        <p class="text-sm text-gray-500">Net Zero • Passive House • LEED Certified</p>
+        <div class="mt-4 flex items-center gap-2">
+          <div class="progress-bar flex-1 h-2"><div class="progress-fill" style="width:14%"></div></div>
+          <span class="text-xs text-gray-500">14%</span>
+        </div>
+      </div>
+      <!-- Institutional -->
+      <div class="glass-card rounded-xl p-6 cat-card" onclick="this.classList.toggle('selected')">
+        <div class="flex items-center justify-between mb-4">
+          <div class="w-12 h-12 rounded-lg flex items-center justify-center text-2xl" style="background:rgba(168,85,247,0.15);">🏫</div>
+        </div>
+        <h3 class="text-lg font-bold mb-1">Institutional</h3>
+        <p class="text-3xl font-black neon-text mb-2">678</p>
+        <p class="text-sm text-gray-500">Schools • Healthcare • Government</p>
+        <div class="mt-4 flex items-center gap-2">
+          <div class="progress-bar flex-1 h-2"><div class="progress-fill" style="width:11%"></div></div>
+          <span class="text-xs text-gray-500">11%</span>
+        </div>
+      </div>
+      <!-- Historic -->
+      <div class="glass-card rounded-xl p-6 cat-card" onclick="this.classList.toggle('selected')">
+        <div class="flex items-center justify-between mb-4">
+          <div class="w-12 h-12 rounded-lg flex items-center justify-center text-2xl" style="background:rgba(245,158,11,0.15);">🏛️</div>
+        </div>
+        <h3 class="text-lg font-bold mb-1">Historic</h3>
+        <p class="text-3xl font-black neon-text mb-2">423</p>
+        <p class="text-sm text-gray-500">Victorian • Colonial • Craftsman</p>
+        <div class="mt-4 flex items-center gap-2">
+          <div class="progress-bar flex-1 h-2"><div class="progress-fill" style="width:7%"></div></div>
+          <span class="text-xs text-gray-500">7%</span>
+        </div>
+      </div>
+      <!-- Waterfront -->
+      <div class="glass-card rounded-xl p-6 cat-card" onclick="this.classList.toggle('selected')">
+        <div class="flex items-center justify-between mb-4">
+          <div class="w-12 h-12 rounded-lg flex items-center justify-center text-2xl" style="background:rgba(59,130,246,0.15);">🌊</div>
+        </div>
+        <h3 class="text-lg font-bold mb-1">Waterfront</h3>
+        <p class="text-3xl font-black neon-text mb-2">334</p>
+        <p class="text-sm text-gray-500">Beach Houses • Lake Homes • Marina</p>
+        <div class="mt-4 flex items-center gap-2">
+          <div class="progress-bar flex-1 h-2"><div class="progress-fill" style="width:5%"></div></div>
+          <span class="text-xs text-gray-500">5%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES TAB -->
+  <section id="tab-services" class="tab-content fade-in">
+    <div class="mb-6">
+      <h2 class="text-2xl font-bold mb-1">Our Services</h2>
+      <p class="text-sm text-gray-500">End-to-end architectural solutions</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="glass-card rounded-xl p-6">
+        <div class="w-14 h-14 rounded-xl flex items-center justify-center text-3xl mb-4" style="background:linear-gradient(135deg,rgba(20,184,166,0.2),rgba(14,165,233,0.2));">📐</div>
+        <h3 class="text-lg font-bold mb-2">Architectural Plans</h3>
+        <p class="text-sm text-gray-400 mb-3">Ready-to-build plans from licensed architects. Residential, commercial, sustainable designs.</p>
+        <span class="text-xs neon-text font-semibold">FROM €499</span>
+      </div>
+      <div class="glass-card rounded-xl p-6">
+        <div class="w-14 h-14 rounded-xl flex items-center justify-center text-3xl mb-4" style="background:linear-gradient(135deg,rgba(20,184,166,0.2),rgba(14,165,233,0.2));">🖥️</div>
+        <h3 class="text-lg font-bold mb-2">3D Renders & Visualization</h3>
+        <p class="text-sm text-gray-400 mb-3">Photorealistic 3D renders, virtual tours, and architectural animations.</p>
+        <span class="text-xs neon-text font-semibold">FROM €299</span>
+      </div>
+      <div class="glass-card rounded-xl p-6">
+        <div class="w-14 h-14 rounded-xl flex items-center justify-center text-3xl mb-4" style="background:linear-gradient(135deg,rgba(20,184,166,0.2),rgba(14,165,233,0.2));">📋</div>
+        <h3 class="text-lg font-bold mb-2">Building Permits</h3>
+        <p class="text-sm text-gray-400 mb-3">Complete permit documentation and certificates for construction approval.</p>
+        <span class="text-xs neon-text font-semibold">FROM €199</span>
+      </div>
+      <div class="glass-card rounded-xl p-6">
+        <div class="w-14 h-14 rounded-xl flex items-center justify-center text-3xl mb-4" style="background:linear-gradient(135deg,rgba(20,184,166,0.2),rgba(14,165,233,0.2));">✏️</div>
+        <h3 class="text-lg font-bold mb-2">Custom Modifications</h3>
+        <p class="text-sm text-gray-400 mb-3">Tailor any plan to your needs. Custom layouts, materials, and specifications.</p>
+        <span class="text-xs neon-text font-semibold">2-3 WEEKS • FROM €399</span>
+      </div>
+      <div class="glass-card rounded-xl p-6">
+        <div class="w-14 h-14 rounded-xl flex items-center justify-center text-3xl mb-4" style="background:linear-gradient(135deg,rgba(20,184,166,0.2),rgba(14,165,233,0.2));">💬</div>
+        <h3 class="text-lg font-bold mb-2">Consultation</h3>
+        <p class="text-sm text-gray-400 mb-3">1-on-1 sessions with licensed architects for project guidance and advice.</p>
+        <span class="text-xs neon-text font-semibold">€150/HOUR</span>
+      </div>
+      <div class="glass-card rounded-xl p-6 metric-card flex flex-col items-center justify-center text-center">
+        <div class="text-4xl mb-3">🏗️</div>
+        <h3 class="text-lg font-bold mb-2">Custom Project?</h3>
+        <p class="text-sm text-gray-400 mb-4">Let's discuss your vision.</p>
+        <button class="px-6 py-2 rounded-lg text-sm font-semibold text-black" style="background:linear-gradient(135deg,#14B8A6,#0EA5E9);">Get a Quote</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVENUE TAB -->
+  <section id="tab-revenue" class="tab-content fade-in">
+    <div class="mb-6">
+      <h2 class="text-2xl font-bold mb-1">Revenue Tracking</h2>
+      <p class="text-sm text-gray-500">Monthly projections and targets</p>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-6">
+      <div class="glass-card rounded-xl p-6">
+        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">Monthly Revenue Projection</h3>
+        <div style="height:300px;"><canvas id="revenueChart"></canvas></div>
+      </div>
+      <div class="glass-card rounded-xl p-6">
+        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">Revenue by Service</h3>
+        <div style="height:300px;"><canvas id="serviceChart"></canvas></div>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+      <div class="glass-card rounded-xl p-5 text-center">
+        <p class="text-sm text-gray-400 mb-1">This Month</p>
+        <p class="text-3xl font-black text-gray-500">€0</p>
+      </div>
+      <div class="glass-card rounded-xl p-5 text-center">
+        <p class="text-sm text-gray-400 mb-1">Target</p>
+        <p class="text-3xl font-black neon-text">€10K<span class="text-lg">/mo</span></p>
+      </div>
+      <div class="glass-card rounded-xl p-5 text-center">
+        <p class="text-sm text-gray-400 mb-1">Avg Plan Price</p>
+        <p class="text-3xl font-black neon-text">€750</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CUSTOMERS TAB -->
+  <section id="tab-customers" class="tab-content fade-in">
+    <div class="mb-6">
+      <h2 class="text-2xl font-bold mb-1">Customer Insights</h2>
+      <p class="text-sm text-gray-500">10,000+ customers worldwide</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+      <div class="glass-card rounded-xl p-5 text-center">
+        <p class="text-sm text-gray-400 mb-1">Total</p>
+        <p class="text-2xl font-black neon-text">10,247</p>
+      </div>
+      <div class="glass-card rounded-xl p-5 text-center">
+        <p class="text-sm text-gray-400 mb-1">This Month</p>
+        <p class="text-2xl font-black neon-text">0</p>
+      </div>
+      <div class="glass-card rounded-xl p-5 text-center">
+        <p class="text-sm text-gray-400 mb-1">Repeat Rate</p>
+        <p class="text-2xl font-black neon-text">34%</p>
+      </div>
+      <div class="glass-card rounded-xl p-5 text-center">
+        <p class="text-sm text-gray-400 mb-1">Avg Rating</p>
+        <p class="text-2xl font-black neon-text">4.9</p>
+      </div>
+    </div>
+    <h3 class="text-lg font-bold mb-4">Recent Reviews</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="glass-card rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-3">
+          <div class="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold" style="background:linear-gradient(135deg,#14B8A6,#0EA5E9);">ML</div>
+          <div>
+            <p class="text-sm font-semibold">Marie Laurent</p>
+            <p class="text-xs text-yellow-400">⭐⭐⭐⭐⭐</p>
+          </div>
+        </div>
+        <p class="text-sm text-gray-400">"The residential plans were exactly what we needed. Professional quality and easy to customize."</p>
+      </div>
+      <div class="glass-card rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-3">
+          <div class="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold" style="background:linear-gradient(135deg,#14B8A6,#0EA5E9);">PD</div>
+          <div>
+            <p class="text-sm font-semibold">Pierre Dubois</p>
+            <p class="text-xs text-yellow-400">⭐⭐⭐⭐⭐</p>
+          </div>
+        </div>
+        <p class="text-sm text-gray-400">"Outstanding sustainable designs. The LEED-certified plans saved us months of work."</p>
+      </div>
+      <div class="glass-card rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-3">
+          <div class="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold" style="background:linear-gradient(135deg,#14B8A6,#0EA5E9);">SN</div>
+          <div>
+            <p class="text-sm font-semibold">Sophie Nguyen</p>
+            <p class="text-xs text-yellow-400">⭐⭐⭐⭐⭐</p>
+          </div>
+        </div>
+        <p class="text-sm text-gray-400">"The 3D visualization service brought our project to life. Incredible attention to detail."</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="border-t border-[#222] py-6 text-center text-xs text-gray-600">
+  Pulse Architects — Dashboard • Auto-refreshes every 60s • Powered by OpenClaw
+</footer>
+
+<script>
+// Tab switching
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+  });
+});
+
+// Category Donut Chart
+new Chart(document.getElementById('categoryChart'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Residential', 'Commercial', 'Sustainable', 'Institutional', 'Historic', 'Waterfront'],
+    datasets: [{
+      data: [2845, 1256, 891, 678, 423, 334],
+      backgroundColor: ['#14B8A6', '#0EA5E9', '#22c55e', '#a855f7', '#f59e0b', '#3b82f6'],
+      borderColor: '#0D0D0D',
+      borderWidth: 3
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { position: 'bottom', labels: { color: '#888', padding: 15, font: { family: 'Inter', size: 12 } } } }
+  }
+});
+
+// Revenue Projection Line Chart
+new Chart(document.getElementById('revenueChart'), {
+  type: 'line',
+  data: {
+    labels: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+    datasets: [{
+      label: 'Projected Revenue (€)',
+      data: [0, 500, 1500, 3000, 5000, 7500, 10000],
+      borderColor: '#14B8A6',
+      backgroundColor: 'rgba(20,184,166,0.1)',
+      fill: true, tension: 0.4, pointRadius: 5, pointBackgroundColor: '#14B8A6'
+    },{
+      label: 'Target (€)',
+      data: [10000, 10000, 10000, 10000, 10000, 10000, 10000],
+      borderColor: '#333', borderDash: [5,5], pointRadius: 0, fill: false
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    scales: {
+      x: { grid: { color: '#1a1a1a' }, ticks: { color: '#888' } },
+      y: { grid: { color: '#1a1a1a' }, ticks: { color: '#888', callback: v => '€' + v.toLocaleString() } }
+    },
+    plugins: { legend: { labels: { color: '#888', font: { family: 'Inter' } } } }
+  }
+});
+
+// Revenue by Service Donut
+new Chart(document.getElementById('serviceChart'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Plan Sales', '3D Renders', 'Permits', 'Custom Mods', 'Consultation'],
+    datasets: [{
+      data: [45, 20, 10, 15, 10],
+      backgroundColor: ['#14B8A6', '#0EA5E9', '#22c55e', '#a855f7', '#f59e0b'],
+      borderColor: '#0D0D0D', borderWidth: 3
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { position: 'bottom', labels: { color: '#888', padding: 15, font: { family: 'Inter', size: 12 } } } }
+  }
+});
+
+// Projection Chart (Overview)
+new Chart(document.getElementById('projectionChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Feb', 'Mar', 'Apr', 'May', 'Jun'],
+    datasets: [{
+      label: 'Revenue (€)',
+      data: [0, 500, 1500, 3000, 5000],
+      backgroundColor: 'rgba(20,184,166,0.6)',
+      borderColor: '#14B8A6', borderWidth: 1, borderRadius: 6
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    scales: {
+      x: { grid: { display: false }, ticks: { color: '#888' } },
+      y: { grid: { color: '#1a1a1a' }, ticks: { color: '#888', callback: v => '€' + v } }
+    },
+    plugins: { legend: { labels: { color: '#888' } } }
+  }
+});
+
+// Timestamp
+document.getElementById('last-update').textContent = 'Updated: ' + new Date().toLocaleString();
+</script>
+</body>
+</html>
